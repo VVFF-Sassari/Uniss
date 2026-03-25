@@ -70,6 +70,81 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
 
+    /* BROCHURE */
+    .brochure-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #ffffff;
+      color: #000;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.25s ease;
+    }
+
+    /* ✅ GRIGLIA SOCIAL */
+    .social-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .social-grid a.full {
+      grid-column: span 2;
+    }
+
+    .social-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #ffffff;
+      color: #000;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.25s ease;
+    }
+
+    .social-grid a:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+      /* ✅ COLORI SOCIAL */
+    .social-grid a.site {
+      background: #e5c762;
+      color: #000;
+    }
+
+    .social-grid a.tv {
+      background: #b30000;
+      color: #fff;
+    }
+
+    .social-grid a.instagram {
+      background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+      color: #fff;
+    }
+
+    .social-grid a.youtube {
+      background: #ff0000;
+      color: #fff;
+    }
+
+    .social-grid a.twitter {
+      background: #000;
+      color: #fff;
+    }
+
     .footer {
       margin-top: 30px;
       font-size: 12px;
@@ -102,25 +177,24 @@
       }
 
       .section-title {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  color: #aaa;
-  margin: 25px 0 10px;
-}
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #aaa;
+        margin: 25px 0 10px;
+      }
 
-.section-title::before,
-.section-title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: #ddd;
-}
+      .section-title::before,
+      .section-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #ddd;
+      }
 
-.section-title span {
-  margin: 0 10px;
-}
-
+      .section-title span {
+        margin: 0 10px;
+      }
     }
   </style>
 </head>
@@ -139,29 +213,55 @@
     <!-- Link -->
     <div class="links">
 
-  <!-- SOCIAL -->
-<div class="section-title" style="margin-top: 40px;"><span>Seguici sulla nostra pagina Instagram ufficiale</span></div>
+        <!-- BROCHURE -->
+    <div class="section-title" style="margin-top: 60px;"><span>Scarica qui le brochure informative</span></div>
 
-  <a href="https://instagram.com" target="_blank">
-    <i class="fab fa-instagram"></i> Instagram
-  </a>
+    <div class="brochure-grid">
+    <a href="presentazione.pdf" target="_blank">
+    <i class="fa-solid fa-download"></i>Come entrare a far parte del Corpo
+    </a>
 
-  <!-- BROCHURE -->
-<div class="section-title" style="margin-top: 60px;"><span>Scarica qui le brochure con i dettagli di tutte le carriere disponibili nel Corpo</span></div>
-
-  <a href="brochure1.pdf" target="_blank">
-    <i class="fas fa-file-pdf"></i> Brochure 1
-  </a>
-
-  <a href="presentazione.pdf" target="_blank">
-    <i class="fas fa-file-pdf"></i> Presentazione
-  </a>
-
-  <a href="brochure3.pdf" target="_blank">
-    <i class="fas fa-file-pdf"></i> Brochure 3
-  </a>
-
+    <a href="carriere.pdf" target="_blank">
+    <i class="fa-solid fa-download"></i>Le carriere: tutte le opportunità per diplomati e laureati
+    </a>
 </div>
+    <!-- SERVIZIO CIVILE -->
+    <div class="section-title" style="margin-top: 40px;"><span>Scopri tutti i Concorsi e le opportunità del Servizio Civile Universale</span></div>
+      <a href="https://www.vigilfuoco.it/servizi-ai-cittadini/concorsi-pubblici" target="_blank">
+      Tutti i Concorsi del Corpo
+      </a>
+      <a href="https://www.vigilfuoco.it/servizi-ai-cittadini/il-servizio-civile-universale-nei-vigili-del-fuoco-il-2026" target="_blank">
+      Servizio Civile Universale
+      </a>
+
+    </div>
+
+<!-- SOCIAL -->
+    <div class="section-title" style="margin-top: 40px;"><span>Seguici sui nostri canali ufficiali</span></div>
+
+    <div class="social-grid">
+
+      <a href="https://www.vigilfuoco.it" target="_blank" class="full site">
+        <i class="fa-solid fa-computer-mouse"></i> Sito ufficiale
+      </a>
+
+      <a href="https://www.vigilfuoco.tv" target="_blank" class="tv">
+        <i class="fa-solid fa-tv"></i> Vigilfuoco TV
+      </a>
+
+      <a href="https://www.instagram.com/vigilidelfuoco_officialpage" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+
+      <a href="https://www.youtube.com/c/vigilidelfuocoofficialpage" target="_blank" class="youtube">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+
+      <a href="https://x.com/vigilidelfuoco" target="_blank" class="twitter">
+        <i class="fab fa-x-twitter"></i> X - Twitter
+      </a>
+
+    </div>
 
     <!-- Footer -->
     <div class="footer">
